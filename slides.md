@@ -16,13 +16,13 @@ transition: slide-left
 mdc: true
 ---
 
-# Unit Testing
+# Cyber Security Basics
 
-Full-Stack Development - part 6/8
+Full-Stack Development - part 7/8
 
-- [ ] Intro to Testing
-- [ ] Writing Unit Tests
-- [ ] Automated Test `npm-test`
+- [ ] CyberSecurity Importance
+- [ ] Input Validation
+- [ ] Authentication, Authorization and Other Considerations
 
 <div class="abs-br m-6 text-xl">
   <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
