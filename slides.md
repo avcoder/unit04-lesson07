@@ -102,11 +102,50 @@ transition: slide-left
 ---
 
 # Heartland Data Breach 2009
-Through SQL Injection, the company's computers were compromised, and 100 million debit/credit cards were stolen
+Tthe company's computers were compromised, and 100 million debit/credit cards were stolen
 
-- [Article 1](https://www.twingate.com/blog/tips/Heartland%20Payment%20Systems-data-breach)
-- [Article 2](https://www.secureworks.com/blog/general-pci-compliance-data-security-case-study-heartland)
+- [Article 1](https://www.twingate.com/blog/tips/Heartland%20Payment%20Systems-data-breach), [Article 2](https://www.secureworks.com/blog/general-pci-compliance-data-security-case-study-heartland)
+- SQL / NoSQL Injection: When apps pass raw user input into queries, attackers can inject operators/characters that modify the db query
+  ```js
+  // Insecure: directly using user input
+  User.findOne({ username: req.body.username, password: req.body.password });
 
+  // Attack Payload
+  { "username": { "$ne": null }, "password": { "$ne": null }}
+  ```
+- Fixes:
+   ```js
+    // Validation + parameterization
+    const { username, password } = req.body;
+    if (typeof username !== 'string' || typeof password !== 'string') return res.status(400).send('Invalid input');
+    User.findOne({ username, password });
+   ```
+- use bcrypt and token-based auth, express-validator or manual checks, sanitize via validator.js
+- see example of [mySQL injection](https://www.youtube.com/watch?v=2OPVViV-GQk&t=128s)
+
+---
+transition: slide-left
+---
+
+# The Samy Worm Breach [🎧](https://darknetdiaries.com/transcript/61/)
+Tthe company's computers were compromised, and 100 million debit/credit cards were stolen
+
+- [Article](https://www.linkedin.com/pulse/how-cross-site-scripting-xss-took-down-myspace-tim-queen--0drke/)
+- XSS: Cross Site Scripting can inject javascript when websites output raw HTML without escaping
+
+1. In our foodtruck app, add a new foodtruck with title as `<script>alert('hacked')</script>`
+2. In home.ejs, change the truck name output from `<%=` to `<%-`
+   - But how did it get there in the first place? 💡 We should purify/sanitize our inputs
+3. `npm i sanitize-html` 
+  ```js
+  app.post('/submit', (req, res) => {
+    const rawInput = req.body.comment;
+    const cleanInput = sanitizeHtml(rawInput, {
+      allowedTags: [], // remove all HTML tags
+      allowedAttributes: {}
+    });
+  ```
+4. use DOMPurify on your frontend
 
 ---
 layout: image-right
