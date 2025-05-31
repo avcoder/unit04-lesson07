@@ -16,13 +16,13 @@ transition: slide-left
 mdc: true
 ---
 
-# Cyber Security Basics
+# Cyber Security 
 
 Full-Stack Development - part 7/8
 
 - [ ] CyberSecurity Importance
-- [ ] Input Validation
-- [ ] Authentication, Authorization and Other Considerations
+- [ ] Principles and Attack Vectors
+- [ ] Defending your app
 
 <div class="abs-br m-6 text-xl">
   <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
