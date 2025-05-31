@@ -39,7 +39,7 @@ transition: slide-left
 ---
 
 # Web Security
-Awareness + Adequate Protection
+What's one thing you'd be terrified of if your web app got hacked?
 
 - Definition: When the web server and all of its applications are protected and measures are put in place to protect it from harm
 - Online threats are real (see Break slide)
@@ -47,6 +47,65 @@ Awareness + Adequate Protection
 - We need to be aware of the risks / pitfalls
 - Consequences range from:
   - Loss of control, Loss of access, Identity theft, Data theft, Monetary theft, Spying, Embarassment
+
+---
+transition: slide-left
+---
+
+# BUT nothing can be 100% secure
+M.I. [classic scene](https://www.youtube.com/watch?v=ifwngc8FHZM)
+
+- new vulnerabilities arise as software changes or don't expect over time
+  - software gets upgraded/added
+  - configurations get changed
+  - data gets updated
+- Zero-Day Vulnerability: A software flaw which exposes a vulnerability but does not yet have a fix
+- Overall security is only as strong as your weakest link
+- Your mission: to raise the weakest points as difficult to exploit as possible, without making it a horrible experience for your users
+
+---
+transition: slide-left
+---
+
+# Principle of Least Privilege
+Control access to systems and resources by granting as little access as possible
+
+- Every program and every user should operate using the least amount of privilege necessary to complete the job
+- ex: if user's job is to edit text, then they should not able to browse financial data
+- ex: no user should be able to edit their system access privileges
+- this applies to:
+  - APIs, system resources, database access, software version control, webpages
+
+---
+transition: slide-left
+---
+
+# General Principles
+
+1. Simple is more secure: A house with 1 door vs. ten houses with doors and windows?
+   - The larger and more complex the system, the larger attack surface, the harder it is to secure
+   - 💡 Use clearly named fns and vars, write comments answering 'why', prefer built-in well-tested libraries
+2. Never trust users: be paranoid, every user is a potential hacker or victim of [social engineering](https://www.youtube.com/watch?v=oG5vsPJ5Tos)
+   - devices/passwords can get stolen, user forgot to logout, disgruntled employee, contractors
+   - 💡 ability to quickly revoke/quarantine access
+3. Expect the unexpected
+   - user enters no text, too much text, paste formatted text, emojis, HTML/JS, can db query be modified
+   - 💡 purify/sanitize inputted text in case users submit accidental/intentional HTML/JS
+4. Resilience: identify, respond, recover
+   - maintain operational continuity
+   - 💡 monitoring systems that notify if something go wrong/suspicious, DevOps team or on call staff
+5. Security through obscurity: less information given out, the better
+   - 💡 Hide info in login error messages, server info in response HEADER, web url file extensions
+
+---
+transition: slide-left
+---
+
+# Heartland Data Breach 2009
+Through SQL Injection, the company's computers were compromised, and 100 million debit/credit cards were stolen
+
+- [Article 1](https://www.twingate.com/blog/tips/Heartland%20Payment%20Systems-data-breach)
+- [Article 2](https://www.secureworks.com/blog/general-pci-compliance-data-security-case-study-heartland)
 
 
 ---
