@@ -45,6 +45,8 @@ Awareness + Adequate Protection
 - Online threats are real (see Break slide)
 - Users need to be able to trust that websites will keep their information safe (ex: credit card info, personal info, etc.)
 - We need to be aware of the risks / pitfalls
+- Consequences range from:
+  - Loss of control, Loss of access, Identity theft, Data theft, Monetary theft, Spying, Spam, Embarassment
 
 
 ---
