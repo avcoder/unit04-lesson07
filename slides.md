@@ -80,7 +80,7 @@ Control access to systems and resources by granting as little access as possible
 transition: slide-left
 ---
 
-# General Principles
+# Other General Principles
 
 1. Simple is more secure: A house with 1 door vs. ten houses with doors and windows?
    - The larger and more complex the system, the larger attack surface, the harder it is to secure
