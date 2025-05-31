@@ -58,6 +58,7 @@ class: text-left
 - 💀 [Spooky Web Dev Horror Stories 2](https://syntax.fm/show/841/spooky-web-dev-horror-stories-part-2)
 - 🙀 [Coding Horror Stories 2023 1](https://syntax.fm/show/683/spooky-coding-horror-stories-2023-part-1)
 - 👻 [Coding Horror Stories 2023 2](https://syntax.fm/show/684/spooky-coding-horror-stories-2023-part-2)
+- ⬛ [Sneakers: Black box scene](https://www.youtube.com/watch?v=EKuwyH1UeYw)
 - 📅 [JS Dates Are About to Be Fixed](https://docs.timetime.in/blog/js-dates-finally-fixed/)
 
 <br>
