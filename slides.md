@@ -38,9 +38,14 @@ Full-Stack Development - part 7/8
 transition: slide-left
 ---
 
-# Review
+# Web Security
+Awareness + Adequate Protection
 
-- Early look at Midterm in LMS
+- Definition: When the web server and all of its applications are protected and measures are put in place to protect it from harm
+- Online threats are real (see Break slide)
+- Users need to be able to trust that websites will keep their information safe (ex: credit card info, personal info, etc.)
+- We need to be aware of the risks / pitfalls
+
 
 ---
 layout: image-right
@@ -59,7 +64,6 @@ class: text-left
 - 🙀 [Coding Horror Stories 2023 1](https://syntax.fm/show/683/spooky-coding-horror-stories-2023-part-1)
 - 👻 [Coding Horror Stories 2023 2](https://syntax.fm/show/684/spooky-coding-horror-stories-2023-part-2)
 - ⬛ [Sneakers: Black box scene](https://www.youtube.com/watch?v=EKuwyH1UeYw)
-- 📅 [JS Dates Are About to Be Fixed](https://docs.timetime.in/blog/js-dates-finally-fixed/)
 
 <br>
 <hr>
