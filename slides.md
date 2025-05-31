@@ -32,3 +32,36 @@ Full-Stack Development - part 7/8
 
 <!--
 -->
+
+
+---
+transition: slide-left
+---
+
+# Review
+
+- Early look at Midterm in LMS
+
+---
+layout: image-right
+transition: slide-left
+image: /assets/swizec.png
+backgroundSize: 400px 270px
+class: text-left
+---
+
+# 10 minute break
+
+🍦 Cool Tips, Trends and Resources:
+- 💾 [Darknet Diaries](https://darknetdiaries.com/)
+- 😱 [Spooky Web Dev Horror Stories 1](https://syntax.fm/show/840/spooky-web-dev-horror-stories-part-1)
+- 🩳 [Spooky Web Dev Horror Stories 2](https://syntax.fm/show/841/spooky-web-dev-horror-stories-part-2)
+- [Coding Horror Stories 2023 1](https://syntax.fm/show/683/spooky-coding-horror-stories-2023-part-1)
+- [Coding Horror Stories 2023 2](https://syntax.fm/show/684/spooky-coding-horror-stories-2023-part-2)
+
+<br>
+<hr>
+<br>
+
+- 🧪 [Enter anonymous lab questions](https://docs.google.com/forms/d/e/1FAIpQLSevvGARdHQikso-uLqFCO481MABKE5HofuSrlzEPMNQ2ZLykw/viewform?usp=dialog)
+- ℹ️ [Course feedback survey](https://circuitstream.typeform.com/to/ZoyYk7px#course_id=SoftwareAN&instructor=9514)
