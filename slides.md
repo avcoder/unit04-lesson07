@@ -138,14 +138,17 @@ Tthe company's computers were compromised, and 100 million debit/credit cards we
    - But how did it get there in the first place? 💡 We should purify/sanitize our inputs
 3. `npm i sanitize-html` 
   ```js
-  app.post('/submit', (req, res) => {
-    const rawInput = req.body.comment;
-    const cleanInput = sanitizeHtml(rawInput, {
-      allowedTags: [], // remove all HTML tags
-      allowedAttributes: {}
+  const createTruck = async (req, res) => {
+    const truckData = req.body;
+    truckData.name = sanitize(truckData.name, {
+      allowedTags: [],
+      allowedAttributes: {},
     });
   ```
-4. use DOMPurify on your frontend
+4. use [DOMPurify](https://cure53.de/purify) on your frontend
+  ```js
+    <img src="/icons/map-pin.svg" alt=""> ${DOMPurify.sanitize(temp, { ALLOWED_TAGS: [] })}</a>
+  ```
 
 ---
 layout: image-right
