@@ -175,6 +175,11 @@ class: text-left
 - 🧪 [Enter anonymous lab questions](https://docs.google.com/forms/d/e/1FAIpQLSevvGARdHQikso-uLqFCO481MABKE5HofuSrlzEPMNQ2ZLykw/viewform?usp=dialog)
 - ℹ️ [Course feedback survey](https://circuitstream.typeform.com/to/ZoyYk7px#course_id=SoftwareAN&instructor=9514)
 
+
+---
+transition: slide-left
+---
+
 # GitHub "Delete Repo" Bug 
 Users could be tricked into visiting a malicious site that auto-submitted a delete form to Github
 
