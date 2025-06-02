@@ -21,8 +21,8 @@ mdc: true
 Full-Stack Development - part 7/8
 
 - [ ] CyberSecurity Importance
-- [ ] Principles and Attack Vectors
-- [ ] Defending your app
+- [ ] Cookies
+- [ ] Basic Principles, Attack Vectors
 
 <div class="abs-br m-6 text-xl">
   <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
@@ -101,6 +101,50 @@ transition: slide-left
 transition: slide-left
 ---
 
+# Cookies
+
+- since HTTP is stateless, cookies are used to:
+   - keep track of currently authenticated user
+   - store contents of a shopping cart
+- stored as a header `Cookie: theme=dark`
+   - Goto any website > Inspect > Applications > Cookies > click on website > identify a cookie, its value, and expiration
+   - Go to console and type: `document.cookie` > what does it output?
+  ```js
+  document.cookie = "studentName=Albert"
+  document.cookie = "session-id=abc123"
+  ```
+- Can you delete entire cookie?  Can you replace `studentName` with another value?
+
+
+---
+layout: image-right
+transition: slide-left
+image: /assets/swizec.png
+backgroundSize: 400px 270px
+class: text-left
+---
+
+# 10 minute break
+
+🍦 Cool Tips, Trends and Resources:
+- 💻 [Darknet Diaries](https://darknetdiaries.com/)
+- 😱 [Spooky Web Dev Horror Stories 1](https://syntax.fm/show/840/spooky-web-dev-horror-stories-part-1)
+- 💀 [Spooky Web Dev Horror Stories 2](https://syntax.fm/show/841/spooky-web-dev-horror-stories-part-2)
+- 🙀 [Coding Horror Stories 2023 1](https://syntax.fm/show/683/spooky-coding-horror-stories-2023-part-1)
+- 👻 [Coding Horror Stories 2023 2](https://syntax.fm/show/684/spooky-coding-horror-stories-2023-part-2)
+- ⬛ [Sneakers: Black box scene](https://www.youtube.com/watch?v=EKuwyH1UeYw)
+
+<br>
+<hr>
+<br>
+
+- 🧪 [Enter anonymous lab questions](https://docs.google.com/forms/d/e/1FAIpQLSevvGARdHQikso-uLqFCO481MABKE5HofuSrlzEPMNQ2ZLykw/viewform?usp=dialog)
+- ℹ️ [Course feedback survey](https://circuitstream.typeform.com/to/ZoyYk7px#course_id=SoftwareAN&instructor=9514)
+
+---
+transition: slide-left
+---
+
 # Heartland Data Breach 2009
 Tthe company's computers were compromised, and 100 million debit/credit cards were stolen
 
@@ -149,32 +193,6 @@ Tthe company's computers were compromised, and 100 million debit/credit cards we
   ```js
     <img src="/icons/map-pin.svg" alt=""> ${DOMPurify.sanitize(temp, { ALLOWED_TAGS: [] })}</a>
   ```
-
----
-layout: image-right
-transition: slide-left
-image: /assets/swizec.png
-backgroundSize: 400px 270px
-class: text-left
----
-
-# 10 minute break
-
-🍦 Cool Tips, Trends and Resources:
-- 💻 [Darknet Diaries](https://darknetdiaries.com/)
-- 😱 [Spooky Web Dev Horror Stories 1](https://syntax.fm/show/840/spooky-web-dev-horror-stories-part-1)
-- 💀 [Spooky Web Dev Horror Stories 2](https://syntax.fm/show/841/spooky-web-dev-horror-stories-part-2)
-- 🙀 [Coding Horror Stories 2023 1](https://syntax.fm/show/683/spooky-coding-horror-stories-2023-part-1)
-- 👻 [Coding Horror Stories 2023 2](https://syntax.fm/show/684/spooky-coding-horror-stories-2023-part-2)
-- ⬛ [Sneakers: Black box scene](https://www.youtube.com/watch?v=EKuwyH1UeYw)
-
-<br>
-<hr>
-<br>
-
-- 🧪 [Enter anonymous lab questions](https://docs.google.com/forms/d/e/1FAIpQLSevvGARdHQikso-uLqFCO481MABKE5HofuSrlzEPMNQ2ZLykw/viewform?usp=dialog)
-- ℹ️ [Course feedback survey](https://circuitstream.typeform.com/to/ZoyYk7px#course_id=SoftwareAN&instructor=9514)
-
 
 ---
 transition: slide-left
