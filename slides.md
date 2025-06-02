@@ -113,8 +113,14 @@ transition: slide-left
   document.cookie = "studentName=Albert"
   document.cookie = "session-id=abc123"
   ```
-- Can you delete entire cookie?  Can you replace `studentName` with another value?
-
+- Can you delete entire cookie on the client?  Can you replace `studentName` with another value?
+- If you don't set expiration, will default to duration of a `session` 
+   ```js
+   res.cookie('theme', 'dark', {
+    // expires in 1 day
+    expires: new Date(Date.now() + 86400000) // OR maxAge: 3600000 expires 1 hour
+   });
+   ```
 
 ---
 layout: image-right
