@@ -113,7 +113,8 @@ transition: slide-left
   document.cookie = "studentName=Albert"
   document.cookie = "session-id=abc123"
   ```
-- Can you delete entire cookie on the client?  Can you replace `studentName` with another value?
+- Can you replace `studentName` with another value?
+- Can you delete entire cookie on the client?  (No, but you can set expiration date to the past)
 - If you don't set expiration, will default to duration of a `session` 
    ```js
    res.cookie('theme', 'dark', {
