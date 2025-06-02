@@ -101,7 +101,7 @@ transition: slide-left
 transition: slide-left
 ---
 
-# Cookies
+# Cookies (pg.1)
 
 - since HTTP is stateless, cookies are used to:
    - keep track of currently authenticated user
@@ -122,6 +122,24 @@ transition: slide-left
     expires: new Date(Date.now() + 86400000) // OR maxAge: 3600000 expires 1 hour
    });
    ```
+
+---
+transition: slide-left
+---
+
+# Cookies (pg.2)
+
+- `httpOnly` attribute - setting this to `true` prevents JS from accessing/modifying it
+- `secure` attribute - ensures cookie is only sent over https connections 
+   - won't send over http
+   - prevents man-in-the-middle attacks
+  ```js
+  res.cookie('username, username, {
+    httpOnly: true, // document.cookie will now be undefined
+    secure: process.env.NODE_ENV === 'production'
+  });
+  ```
+- 
 
 ---
 layout: image-right
