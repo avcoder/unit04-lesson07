@@ -249,8 +249,9 @@ transition: slide-left
 ---
 
 # OWASP Top 10
-Top 10 Web application security risks https://owasp.org/www-project-top-ten/
 
+- Top 10 Web application security risks https://owasp.org/www-project-top-ten/
+- Top 10 API security risks - https://owasp.org/API-Security/editions/2023/en/0x11-t10/
 1. Broken Access Control - https://owasp.org/Top10/A01_2021-Broken_Access_Control/
 2. Cryptographic Failures - https://owasp.org/Top10/A02_2021-Cryptographic_Failures/
 3. Injection - https://owasp.org/Top10/A03_2021-Injection/
@@ -272,6 +273,6 @@ What's the difference?
 - Authentication: Verifying who a user is
    - Tools: Passport.js, OAuth
    - Should: use strong passwords, Multi-Factor Authentication (MFA), session expiration
-- Authorization: Determining what the user can do (ex: admin vs regular user)
+- Authorization: Determining what the user can do (ex: admin vs editor vs regular user)
    - Tools: use middleware to role check, [winston](https://www.npmjs.com/package/winston) or morgan for logging
    - Should: consistently examine who can access what? keep a record (audit trail) of system events and actions, Log logins, data changes, access denials, etc. 
