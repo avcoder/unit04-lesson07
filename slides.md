@@ -276,6 +276,28 @@ transition: slide-left
 transition: slide-left
 ---
 
+# Content Security Policy
+Blacklist resoures that are NOT allowed to load. Whitelist resources that are allowed to load
+
+- Allows devs to control the resources the browser is allowed to load for their site
+- Create Allowlist Domains: specify which domains are permitted to load resources such as scripts, styles, or images
+- Directive Based: use various directives to control what content is allowed
+- Report Violations: optionally configure CSP to report violations to a specified URI
+- Helps prevent a range of attacks, including XSS, and data injection attacks
+- ex: I'll allow CSS from this domain and scripts from another
+- ex: if someone installs their 3rd party script, CSP won't run it.
+  ```html
+  // example header
+  Content-Security-Policy: script-src 'self' htps://trustme.com 
+
+  // OR example meta
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://trustme.com">
+  ```
+
+---
+transition: slide-left
+---
+
 # OWASP Top 10
 
 - Top 10 Web application security risks https://owasp.org/www-project-top-ten/
