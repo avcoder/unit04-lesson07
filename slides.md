@@ -347,6 +347,13 @@ transition: slide-left
 1. Monitoring - Detecing threats in prod
 1. Testing - Ensuring APIs are free of flaws
 
+# Exercise
+
+1. Find a hacker story
+1. Determine what security issue was at play
+1. Find out how the company resolved it
+1. Share the link in the chat
+
 ---
 transition: slide-left
 ---
