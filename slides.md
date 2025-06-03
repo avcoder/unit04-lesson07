@@ -192,7 +192,7 @@ Tthe company's computers were compromised, and 100 million debit/credit cards we
   ```js
     <img src="/icons/map-pin.svg" alt=""> ${DOMPurify.sanitize(temp, { ALLOWED_TAGS: [] })}</a>
   ```
-  
+
 ---
 transition: slide-left
 ---
@@ -237,3 +237,9 @@ transition: slide-left
 # Authentication vs Authorization
 What's the difference?
 
+- Authentication: Verifying who a user is
+   - Tools: Passport.js, OAuth
+   - Should: use strong passwords, Multi-Factor Authentication (MFA), session expiration
+- Authorization: Determining what the user can do (ex: admin vs regular user)
+   - Tools: use middleware to role check
+   - Should: consistently examine who can access what?
