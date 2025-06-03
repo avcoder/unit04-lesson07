@@ -322,6 +322,9 @@ Hacker exposes over 2 million DuoLingo's user emails and names
 - in DuoLingo's case, the breach was facilitated by an exposed API endpoint that allowed anyone to submit an email address and retrieve associated user data, including names, email addresses, and languages studied.
 - test it out with your email `https://www.duolingo.com/2017-06-30/users?email=`
 - try `email=joesmith@gmail.com` -- does it reveal any info?
+- Should: 
+   - define auth policies based on business requirements
+   - implement automated testing to identify gaps
 
 ---
 transition: slide-left
