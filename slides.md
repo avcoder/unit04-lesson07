@@ -281,7 +281,7 @@ What's the difference?
 transition: slide-left
 ---
 
-# Coinbase Authorization Bug
+# Coinbase Authorization Bug (pg.1)
 Broken Object Level Authorization (BOLA)
 
 - [Article 1](https://salt.security/blog/understanding-the-coinbase-api-vulnerability) [Article 2](https://www.coinbase.com/en-ca/blog/retrospective-recent-coinbase-bug-bounty-award)
@@ -292,6 +292,21 @@ Broken Object Level Authorization (BOLA)
 
 <img src="/assets/coinbase.png">
 
+---
+transition: slide-left
+---
+
+# Coinbase Authorization Bug (pg.2)
+
+- Lesson:
+   - Your UI is not part of your security
+   - even though the UI prevented this kind of API hack, don't depend on UI
+   - if hacker can get at API level, UI is useless
+- Should:
+   - Discuss authorization rules during API design phase
+   - Review business requirements and define data access policies
+   - Enforce authorization controls at API layer
+   - Implement automated, pre-production testing to find any BOLA flaws
 ---
 transition: slide-left
 ---
