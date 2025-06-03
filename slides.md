@@ -323,7 +323,7 @@ Hacker exposes over 2 million DuoLingo's user emails and names
 - test it out with your email `https://www.duolingo.com/2017-06-30/users?email=`
 - try `email=joesmith@gmail.com` -- does it reveal any info?
 - Should: 
-   - define auth policies based on business requirements
+   - define auth policies based on business requirements (ex: checking weather ✅.  transferring funds 🔒)
    - implement automated testing to identify gaps
 
 ---
