@@ -192,7 +192,10 @@ Tthe company's computers were compromised, and 100 million debit/credit cards we
   ```js
     <img src="/icons/map-pin.svg" alt=""> ${DOMPurify.sanitize(temp, { ALLOWED_TAGS: [] })}</a>
   ```
-
+  
+---
+transition: slide-left
+---
 
 # GitHub "Delete Repo" Bug 
 Users could be tricked into visiting a malicious site that auto-submitted a delete form to Github
@@ -230,3 +233,7 @@ class: text-left
 ---
 transition: slide-left
 ---
+
+# Authentication vs Authorization
+What's the difference?
+
