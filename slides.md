@@ -244,6 +244,23 @@ class: text-left
 - 🧪 [Enter anonymous lab questions](https://docs.google.com/forms/d/e/1FAIpQLSevvGARdHQikso-uLqFCO481MABKE5HofuSrlzEPMNQ2ZLykw/viewform?usp=dialog)
 - ℹ️ [Course feedback survey](https://circuitstream.typeform.com/to/ZoyYk7px#course_id=SoftwareAN&instructor=9514)
 
+---
+transition: slide-left
+---
+
+# OWASP Top 10
+Top 10 Web application security risks https://owasp.org/www-project-top-ten/
+
+1. Broken Access Control - https://owasp.org/Top10/A01_2021-Broken_Access_Control/
+2. Cryptographic Failures - https://owasp.org/Top10/A02_2021-Cryptographic_Failures/
+3. Injection - https://owasp.org/Top10/A03_2021-Injection/
+
+"Shift left" is a concept in software development that means moving security practices earlier (leftward) in the development process, rather than treating them as an afterthought near the end.
+```md
+[ Plan ] → [ Design ] → [ Develop ] → [ Test ] → [ Deploy ] → [ Maintain ]
+   ↑                                 ↑
+ Shift Security Left ←←←←←←←←←←←←←←←
+```
 
 ---
 transition: slide-left
