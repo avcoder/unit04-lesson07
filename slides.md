@@ -114,14 +114,7 @@ transition: slide-left
   document.cookie = "session-id=abc123"
   ```
 - Can you replace `studentName` with another value?
-- Can you delete entire cookie on the client?  (No, but you can set expiration date to the past)
-- If you don't set expiration, will default to duration of a `session` 
-   ```js
-   res.cookie('theme', 'dark', {
-    // expires in 1 day
-    expires: new Date(Date.now() + 86400000) // OR maxAge: 3600000 expires 1 hour
-   });
-   ```
+
 
 ---
 transition: slide-left
@@ -139,33 +132,14 @@ transition: slide-left
     secure: process.env.NODE_ENV === 'production'
   });
   ```
-- 
-
----
-layout: image-right
-transition: slide-left
-image: /assets/swizec.png
-backgroundSize: 400px 270px
-class: text-left
----
-
-# 10 minute break
-
-🍦 Cool Tips, Trends and Resources:
-- 💻 [Darknet Diaries](https://darknetdiaries.com/)
-- 😱 [Spooky Web Dev Horror Stories 1](https://syntax.fm/show/840/spooky-web-dev-horror-stories-part-1)
-- 💀 [Spooky Web Dev Horror Stories 2](https://syntax.fm/show/841/spooky-web-dev-horror-stories-part-2)
-- 🙀 [Coding Horror Stories 2023 1](https://syntax.fm/show/683/spooky-coding-horror-stories-2023-part-1)
-- 👻 [Coding Horror Stories 2023 2](https://syntax.fm/show/684/spooky-coding-horror-stories-2023-part-2)
-- ⬛ [Sneakers: Black box scene](https://www.youtube.com/watch?v=EKuwyH1UeYw)
-
-<br>
-<hr>
-<br>
-
-- 🧪 [Enter anonymous lab questions](https://docs.google.com/forms/d/e/1FAIpQLSevvGARdHQikso-uLqFCO481MABKE5HofuSrlzEPMNQ2ZLykw/viewform?usp=dialog)
-- ℹ️ [Course feedback survey](https://circuitstream.typeform.com/to/ZoyYk7px#course_id=SoftwareAN&instructor=9514)
-
+- Can you delete entire cookie on the client?  (No, but you can set expiration date to the past)
+- If you don't set expiration, will default to duration of a `session` 
+   ```js
+   res.cookie('theme', 'dark', {
+    // expires in 1 day
+    expires: new Date(Date.now() + 86400000) // OR maxAge: 3600000 expires 1 hour
+   });
+   ```
 ---
 transition: slide-left
 ---
@@ -219,9 +193,6 @@ Tthe company's computers were compromised, and 100 million debit/credit cards we
     <img src="/icons/map-pin.svg" alt=""> ${DOMPurify.sanitize(temp, { ALLOWED_TAGS: [] })}</a>
   ```
 
----
-transition: slide-left
----
 
 # GitHub "Delete Repo" Bug 
 Users could be tricked into visiting a malicious site that auto-submitted a delete form to Github
@@ -229,3 +200,33 @@ Users could be tricked into visiting a malicious site that auto-submitted a dele
 - [Article](https://www.cve.news/cve-2023-5498/)
 - CSRF: Cross-Site Request Forgery is when a user is tricked into performing an unwanted action on a web application where they were already authenticated
 - CSRF abuses the automatic sending of cookies by browsers (ex: session tokens) with every request, even if the request comes from another site
+
+---
+layout: image-right
+transition: slide-left
+image: /assets/swizec.png
+backgroundSize: 400px 270px
+class: text-left
+---
+
+# 10 minute break
+
+🍦 Cool Tips, Trends and Resources:
+- 💻 [Darknet Diaries](https://darknetdiaries.com/)
+- 😱 [Spooky Web Dev Horror Stories 1](https://syntax.fm/show/840/spooky-web-dev-horror-stories-part-1)
+- 💀 [Spooky Web Dev Horror Stories 2](https://syntax.fm/show/841/spooky-web-dev-horror-stories-part-2)
+- 🙀 [Coding Horror Stories 2023 1](https://syntax.fm/show/683/spooky-coding-horror-stories-2023-part-1)
+- 👻 [Coding Horror Stories 2023 2](https://syntax.fm/show/684/spooky-coding-horror-stories-2023-part-2)
+- ⬛ [Sneakers: Black box scene](https://www.youtube.com/watch?v=EKuwyH1UeYw)
+
+<br>
+<hr>
+<br>
+
+- 🧪 [Enter anonymous lab questions](https://docs.google.com/forms/d/e/1FAIpQLSevvGARdHQikso-uLqFCO481MABKE5HofuSrlzEPMNQ2ZLykw/viewform?usp=dialog)
+- ℹ️ [Course feedback survey](https://circuitstream.typeform.com/to/ZoyYk7px#course_id=SoftwareAN&instructor=9514)
+
+
+---
+transition: slide-left
+---
