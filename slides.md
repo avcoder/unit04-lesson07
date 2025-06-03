@@ -281,7 +281,7 @@ What's the difference?
 transition: slide-left
 ---
 
-# Coinbase 
+# Coinbase Authorization Bug
 Broken Object Level Authorization (BOLA)
 
 - [Article 1](https://salt.security/blog/understanding-the-coinbase-api-vulnerability) [Article 2](https://www.coinbase.com/en-ca/blog/retrospective-recent-coinbase-bug-bounty-award)
