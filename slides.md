@@ -260,6 +260,22 @@ transition: slide-left
 transition: slide-left
 ---
 
+# Man-in-the-Middle Attacks
+
+- occurs when an attacker secretly intercepts and possibly alters the communication between two parties who believe they are directly communicating with each other.
+- examples:
+   - Insecure Wi-Fi networks (e.g., public hotspots)
+   - DNS spoofing
+   - HTTPS stripping (forcing a site to use HTTP instead of HTTPS)
+- Solutions: 
+   - use `https`
+   - Avoid public or unsecured Wi-Fi
+   - use VPNs
+
+---
+transition: slide-left
+---
+
 # OWASP Top 10
 
 - Top 10 Web application security risks https://owasp.org/www-project-top-ten/
