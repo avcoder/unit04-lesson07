@@ -307,6 +307,22 @@ transition: slide-left
    - Review business requirements and define data access policies
    - Enforce authorization controls at API layer
    - Implement automated, pre-production testing to find any BOLA flaws
+
+---
+transition: slide-left
+---
+
+# DuoLingo's Broken Authentication
+Hacker exposes over 2 million DuoLingo's user emails and names 
+
+- [Article 1](https://hackread.com/api-misuse-hacker-leak-duolingo-emails-names/) [Article 2](https://www.cequence.ai/blog/api-security/api-breach-duolingo/)
+- Broken Authentication: API vulnerability due to weak authentication such as missing security controls, or poorly implemented controls
+- Risks: data harvesting, abuse of your API
+- ex: no 2FA, no captcha, credential stuffing, not using [OAuth](https://www.microsoft.com/en-ca/security/business/security-101/what-is-oauth)
+- in DuoLingo's case, the breach was facilitated by an exposed API endpoint that allowed anyone to submit an email address and retrieve associated user data, including names, email addresses, and languages studied.
+- test it out with your email `https://www.duolingo.com/2017-06-30/users?email=`
+- try `email=joesmith@gmail.com` -- does it reveal any info?
+
 ---
 transition: slide-left
 ---
