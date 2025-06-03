@@ -276,3 +276,25 @@ What's the difference?
 - Authorization: Determining what the user can do (ex: admin vs editor vs regular user)
    - Tools: use middleware to role check, [winston](https://www.npmjs.com/package/winston) or morgan for logging
    - Should: consistently examine who can access what? keep a record (audit trail) of system events and actions, Log logins, data changes, access denials, etc. 
+
+---
+transition: slide-left
+---
+
+# Coinbase 
+Broken Object Level Authorization (BOLA)
+
+- [Article 1](https://salt.security/blog/understanding-the-coinbase-api-vulnerability) [Article 2](https://www.coinbase.com/en-ca/blog/retrospective-recent-coinbase-bug-bounty-award)
+- BOLA: Broken Object Level Authorization refers to flaws in governing access rules
+- Most common API vulnerability
+- Ask: Can user A perform an action on an unauthorized object? (ex: User B's data)
+- Below is what a normal transaction looks like.  Hacker replaced product_id with BitCoin to see potential revealing error message.  But his $1060 of Etherum sold for $43000 Bitcoin
+
+<img src="/assets/coinbase.png">
+
+---
+transition: slide-left
+---
+
+# Homework
+- Work on your "Note-taking" midterm app due June 15 midnight EST
