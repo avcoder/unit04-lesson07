@@ -214,7 +214,7 @@ Researcher discovered a vulnerability in Instagram's one-time-password recovery 
 
 - [Article](https://www.securityweek.com/instagram-account-takeover-vulnerability-earns-hacker-30000/?utm_source=chatgpt.com)
 - Although Instagram implemented rate limiting to prevent brute-forcing of the  six-digit verification code, the researcher found that sending 1,000 requests resulted in 250 successful ones. By combining this with IP rotation, the attacker managed to send 200,000 requests, leading to a significant account takeover incident
-- Rate-limiting:  a technique used to control how many requests a user, IP address, or application can make to a server or API in a specific time window.
+- RATE-LIMITING:  a technique used to control how many requests a user, IP address, or application can make to a server or API in a specific time window.
    - ex: “Only allow 100 requests per IP per 10 minutes.”
    - If a user exceeds this, the server blocks or delays further requests.
 - npm [rate-limit package](https://www.npmjs.com/package/express-rate-limit)
