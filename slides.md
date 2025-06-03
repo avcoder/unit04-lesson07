@@ -241,5 +241,5 @@ What's the difference?
    - Tools: Passport.js, OAuth
    - Should: use strong passwords, Multi-Factor Authentication (MFA), session expiration
 - Authorization: Determining what the user can do (ex: admin vs regular user)
-   - Tools: use middleware to role check, winston/morgan for logging
+   - Tools: use middleware to role check, [winston](https://www.npmjs.com/package/winston) or morgan for logging
    - Should: consistently examine who can access what? keep a record (audit trail) of system events and actions, Log logins, data changes, access denials, etc. 
