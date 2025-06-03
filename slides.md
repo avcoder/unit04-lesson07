@@ -248,6 +248,18 @@ class: text-left
 transition: slide-left
 ---
 
+# Same Origin Policy
+
+- a security measure implemented by web browsers to restrict how documents or scripts loaded from one origin interact with resources from another origin.
+- Two resources from different sites should NOT be able to interfere with each other
+- `Origin = Protocol + Domain + Port`
+   - if any of the above are different, then it's not the same origin
+- Way around it: `CORS`
+
+---
+transition: slide-left
+---
+
 # OWASP Top 10
 
 - Top 10 Web application security risks https://owasp.org/www-project-top-ten/
