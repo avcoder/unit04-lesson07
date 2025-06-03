@@ -330,5 +330,16 @@ Hacker exposes over 2 million DuoLingo's user emails and names
 transition: slide-left
 ---
 
+# Threat Modeling
+Analyzing representations of a system to highlight concerns about security and privacy characteristics.
+
+- Assess the overall risk of each threat then prioritize mitigation
+- see [example](https://medium.com/@jcalvoch/threat-modeling-ba923493e2b0)
+<img src="/assets/threat.png" width="700">
+
+---
+transition: slide-left
+---
+
 # Homework
 - Work on your "Note-taking" midterm app due June 15 midnight EST
