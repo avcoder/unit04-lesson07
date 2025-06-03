@@ -209,11 +209,11 @@ Users could be tricked into visiting a malicious site that auto-submitted a dele
 transition: slide-left
 ---
 
-# Instagram Account Takeover via One-Time-Password Brute Force
-A researcher discovered a vulnerability in Instagram's password recovery system for mobile devices
+# Instagram Account Takeover via OTP Brute Force
+Researcher discovered a vulnerability in Instagram's one-time-password recovery system for mobile devices
 
 - [Article](https://www.securityweek.com/instagram-account-takeover-vulnerability-earns-hacker-30000/?utm_source=chatgpt.com)
-- Although Instagram implemented rate limiting to prevent brute-forcing of the six-digit verification code, the researcher found that sending 1,000 requests resulted in 250 successful ones. By combining this with IP rotation, the attacker managed to send 200,000 requests, leading to a significant account takeover incident
+- Although Instagram implemented rate limiting to prevent brute-forcing of the  six-digit verification code, the researcher found that sending 1,000 requests resulted in 250 successful ones. By combining this with IP rotation, the attacker managed to send 200,000 requests, leading to a significant account takeover incident
 - npm [rate-limit package](https://www.npmjs.com/package/express-rate-limit)
 
 ---
