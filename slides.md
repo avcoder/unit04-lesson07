@@ -288,7 +288,7 @@ Broken Object Level Authorization (BOLA)
 - BOLA: Broken Object Level Authorization refers to flaws in governing access rules
 - Most common API vulnerability
 - Ask: Can user A perform an action on an unauthorized object? (ex: User B's data)
-- Below is what a normal transaction looks like.  Hacker replaced product_id with BitCoin to see potential revealing error message.  But his $1060 of Etherum sold for $43000 Bitcoin
+- Below is what a normal transaction looks like.  Hacker replaced product_id with BitCoin to see potential revealing error message.  But instead his $1060 of Etherum sold for $43000 Bitcoin!
 
 <img src="/assets/coinbase.png">
 
