@@ -203,6 +203,18 @@ Users could be tricked into visiting a malicious site that auto-submitted a dele
 - [Article](https://www.cve.news/cve-2023-5498/)
 - CSRF: Cross-Site Request Forgery is when a user is tricked into performing an unwanted action on a web application where they were already authenticated
 - CSRF abuses the automatic sending of cookies by browsers (ex: session tokens) with every request, even if the request comes from another site
+- npm [csrf packages](https://www.npmjs.com/search?q=csrf)
+
+---
+transition: slide-left
+---
+
+# Instagram Account Takeover via One-Time-Password Brute Force
+A researcher discovered a vulnerability in Instagram's password recovery system for mobile devices
+
+- [Article](https://www.securityweek.com/instagram-account-takeover-vulnerability-earns-hacker-30000/?utm_source=chatgpt.com)
+- Although Instagram implemented rate limiting to prevent brute-forcing of the six-digit verification code, the researcher found that sending 1,000 requests resulted in 250 successful ones. By combining this with IP rotation, the attacker managed to send 200,000 requests, leading to a significant account takeover incident
+- npm [rate-limit package](https://www.npmjs.com/package/express-rate-limit)
 
 ---
 layout: image-right
