@@ -276,7 +276,7 @@ transition: slide-left
 transition: slide-left
 ---
 
-# Content Security Policy
+# Content Security Policy (pg.1)
 Blacklist resoures that are NOT allowed to load. Whitelist resources that are allowed to load
 
 - Allows devs to control the resources the browser is allowed to load for their site
@@ -293,6 +293,31 @@ Blacklist resoures that are NOT allowed to load. Whitelist resources that are al
   // OR example meta
   <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://trustme.com">
   ```
+
+---
+transition: slide-left
+---
+
+# Setting CSP in express.js via helmet
+
+```js
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+        scriptSrc: ["'self'", 'https://cdn.jsdelivr.net'],
+        styleSrc: ["'self'", 'https://fonts.googleapis.com'],
+        fontSrc: ["'self'", 'https://fonts.gstatic.com'],
+        imgSrc: ["'self'", 'data:'],
+        connectSrc: ["'self'"],
+        objectSrc: ["'none'"],
+        upgradeInsecureRequests: [],
+      },
+    },
+  })
+);
+```
 
 ---
 transition: slide-left
