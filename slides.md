@@ -21,8 +21,8 @@ mdc: true
 Full-Stack Development - part 7/8
 
 - [ ] CyberSecurity Importance
-- [ ] Cookies
-- [ ] Basic Principles, Attack Vectors
+- [ ] Hacker Stories; Lessons learned
+- [ ] General Principles
 
 <div class="abs-br m-6 text-xl">
   <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
