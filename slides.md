@@ -341,5 +341,15 @@ Analyzing representations of a system to highlight concerns about security and p
 transition: slide-left
 ---
 
+# 3 Pillars of API Security
+
+1. Governance - Developing secure APIs
+1. Monitoring - Detecing threats in prod
+1. Testing - Ensuring APIs are free of flaws
+
+---
+transition: slide-left
+---
+
 # Homework
 - Work on your "Note-taking" midterm app due June 15 midnight EST
